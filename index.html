@@ -1,112 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://wow.zamimg.com/widgets/power.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
-   a { 
-    text-decoration: none; 
-   }
-   a:hover { 
-    text-decoration: underline; 
-   }
-  </style> 
-<table>
-<tbody>
-<p>From Raid/WBoss With out Tier Gear</p>
-<p>T2 set Full</p> 
-<tr>
-<td></td>
-<td>T1</td>
-<td>T2</td>
-<td>T3</td>
-</tr>
-<tr>
-<td>Helmet</td>
-<td><a href="https://classic.wowhead.com/item=19375/mishundare-circlet-of-the-mind-flayer">Mish'undare, Circlet of the Mind Flayer</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Neck</td>
-<td><a href="https://classic.wowhead.com/item=18814/choker-of-the-fire-lord">Choker Of The Fire Lord</a></td>
-<td><a href="https://classic.wowhead.com/item=19371/pendant-of-the-fallen-dragon">Pendant Of The Fallen Dragon</a></td>
-<td><a href="https://classic.wowhead.com/item=17109/choker-of-enlightenment">Choker Of Enlightenment</a></td>
-</tr>
-<tr>
-<td>Shoulder</td>
-<td><a href="https://classic.wowhead.com/item=19370/mantle-of-the-blackwing-cabal">Mantle of the Blackwing Cabal</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Back</td>
-<td><a href="https://classic.wowhead.com/item=19378/cloak-of-the-brood-lord">Cloak of the Brood Lord</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Chest</td>
-<td><a href="https://classic.wowhead.com/item=19145/robe-of-volatile-power">Robe of Volatile Power</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Wrist</td>
-<td><a href="https://classic.wowhead.com/item=19374/bracers-of-arcane-accuracy">Bracers of Arcane Accuracy</a></td>
-<td><a href="https://classic.wowhead.com/item=19135/blacklight-bracer">Blacklight Bracer</a></td>
-<td>_</td>
-</tr>
-<tr>
-<td>Hands</td>
-<td><a href="https://classic.wowhead.com/item=19390/taut-dragonhide-gloves">Taut Dragonhide Gloves</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Waist</td>
-<td><a href="https://classic.wowhead.com/item=19388/angelistas-grasp">Angelista's Grasp</a></td>
-<td><a href="https://classic.wowhead.com/item=19400/firemaws-clutch">Firemaw's Clutch</a></td>
-<td><a href="https://classic.wowhead.com/item=19136/mana-igniting-cord">Mana Igniting Cord</a></td>
-</tr>
-<tr>
-<td>Legs</td>
-<td>_</td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Feet</td>
-<td><a href="https://classic.wowhead.com/item=19131/snowblind-shoes">Snowblind Shoes</a></td>
-<td>_</td>
-<td>_</td>
-</tr>
-<tr>
-<td>Ring</td>
-<td><a href="https://classic.wowhead.com/item=19403/band-of-forced-concentration">Band of Forced Concentration</a></td>
-<td><a href="https://classic.wowhead.com/item=18543/ring-of-entropy">Ring of Entropy</a></td>
-<td><a href="https://classic.wowhead.com/item=19147/ring-of-spell-power">Ring of Spell Power</a></td>
-</tr>
-<tr>
-<td>Trinket</td>
-<td><a href="https://classic.wowhead.com/item=19379/neltharions-tear">Neltharion's Tear</a></td>
-<td><a href="https://classic.wowhead.com/item=19340/rune-of-metamorphosis">Rune of Metamorphosis</a></td>
-<td><a href="https://classic.wowhead.com/item=18820/talisman-of-ephemeral-power">Talisman of Ephemeral Power</a></td>
-</tr>
-<tr>
-<td>Main Hand</td>
-<td><a href="https://classic.wowhead.com/item=19360/lokamir-il-romathis">Lok'amir il Romathis</a></td>
-<td><a href="https://classic.wowhead.com/item=17070/fang-of-the-mystics">Fang of the Mystics</a></td>
-<td>_</td>
-</tr>
-<tr>
-<td>Off Hand</td>
-<td><a href="https://classic.wowhead.com/item=19366/master-dragonslayers-orb">Master Dragonslayer's Orb</a></td>
-<td><a href="https://classic.wowhead.com/item=17067/ancient-cornerstone-grimoire">Ancient Cornerstone Grimoire</a></td>
-<td>_</td>
-</tr>
-<tr>
-<td>2-Hand</td>
-<td><a href="https://classic.wowhead.com/item=19356/staff-of-the-shadow-flame">Staff of the Shadow Flame</a></td>
-<td><a href="https://classic.wowhead.com/item=19355/shadow-wing-focus-staff">Shadow Wing Focus Staff</a></td>
-<td><a href="https://classic.wowhead.com/item=17113/amberseal-keeper">Amberseal Keeper</a></td>
-</tr>
+	table{
+	border-collapse: collapse;}
+	td{
+	padding:20px;
+	border: 1px solid black;
+	}
+	.Pal{
+	background-color:pink;
+	}
+	.Warr{
+	background-color:#826405;
+	}
+	.Shammy{
+	background-color:#227ee0;
+	}
+	.Dudu{
+	background-color:#d67f1c;
+	}
+	.Lock{
+	background-color:#6117b0;
+	}
+	.Mage{
+	background-color:#41a7cc;
+	}
+	.Priest{}
+	.Rogue{
+	background-color:yellow;
+	}
+	.Hunt{
+	background-color:#65ab0a;
+	}
+	.togleme{
+	padding:20px;
+	border: 1px dashed black;
+	margin-bottom: 15px;
+	}
+	.togleme h2{
+	cursor:pointer;
+	text-decoration: underline;
+	}
+	table.my{
+	display:none;
+	}
+</style>
+</head>
 
+<body>
+	<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
+	$(document).ready(function(){
+		$(".togleme h2").click(function(){
+			$(this).parent().find("table").toggle();
+		});
+	});
+	</script>
+	<h1>Serpentshrine Cavern Loot</h1>
+	<div class="togleme"><h2>Trash Drops</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30027/boots-of-courage-unending" data-wowhead="item=30027">Boots of unending courage</a></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30022/pendant-of-the-perilous" data-wowhead="item=30022">Pendant of the Perilous</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Pal">Ret Paladin</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30620/spyglass-of-the-hidden-fleet" data-wowhead="item=30620">Spyglass of the Hidden Fleet</a></td>
+				<td class="Dudu">Feral Druid</td>
+				<td>=</td>
+				<td class="Pal">Prot Paladin</td>
+				<td>=</td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30021/wildfury-greatstaff" data-wowhead="item=30021">Spyglass of the Hidden Fleet</a></td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>
+		</table>
+	</div>
+	<div class="togleme"><h2>Hydross the Unstable</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30056/robe-of-hateful-echoes" data-wowhead="item=30056">Robe of Hateful Echoes</a></td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+				<td>=</td>
+				<td class="Lock">Warlock</td>
+				<td>=</td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30050/boots-of-the-shifting-nightmare" data-wowhead="item=30050">Robe of Hateful Echoes</a></td>
+				<td class="Shammy">Warlock</td>
+				<td>></td>
+				<td class="Priest">Shadow Priest</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30050/boots-of-the-shifting-nightmare" data-wowhead="item=30050">Boots of the Shifting Nightmare</a></td>
+				<td class="Shammy"/>Warlock</td>
+				<td>></td>
+				<td class="Priest">Shadow Priest</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=32516/wraps-of-purification" data-wowhead="item=32516">Wraps of Purification</a></td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>></td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>=</td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30055/shoulderpads-of-the-stranger" data-wowhead="item=30055">Shoulderpads of the stranger</a></td>
+				<td class="Shammy">Enhancement</td>
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30054/ranger-generals-chestguard" data-wowhead="item=30054">Ranger-General's Chestguard</a></td>
+				<td class="Hunt">Hunter</td>
+				<td>=</td>
+				<td class="Shammy">Enhancement</td>
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>
+				<td>=</td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30047/blackfathom-warbands" data-wowhead="item=30054">Blackfathom Warbands</a></td>
+				<td class="Pal">Holy Paladin</td>
+				<td>=</td>
+				<td class="Shammy">Resto Shaman</td>
+			</tr>		
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30048/brighthelm-of-justice" data-wowhead="item=30048">Brighthelm of Justice</a></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30053/pauldrons-of-the-wardancer" data-wowhead="item=30054">Pauldrons of the Wardancer</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Pal">Ret paladin</td>
+			</tr>	
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30049/fathomstone" data-wowhead="item=30049">Fathomstone</a></td>
+				<td class="Lock">Warlock</td>
+				<td>></td>
+				<td class="Dudu">Balance Druid</td>			
+				<td>=</td>
+				<td class="Priest">Shadow Priest</td>
+				<td>=</td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Mage">Mage</td>
+			</tr>			
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30052/ring-of-lethality" data-wowhead="item=30052">Ring of Lethality</a></td>
+				<td class="Hunt">Surv</td>
+				<td>></td>
+				<td class="Hunt">BM</td>			
+				<td>=</td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=33055/band-of-vile-aggression" data-wowhead="item=30055">Band of Vile Aggression</a></td>
+				<td class="Warr">Prot Warrior</td>
+				<td>=</td>
+				<td class="Pal">Prot Paladin</td>			
+				<td>=</td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>			
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30629/scarab-of-displacement" data-wowhead="item=30629">Scarab of Displacement</a></td>
+				<td class="Warr">Prot Warrior</td>
+				<td>=</td>
+				<td class="Pal">Prot Paladin</td>			
+			</tr>	
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30664/living-root-of-the-wildheart" data-wowhead="item=30664">Living Root of the Wildheart</a></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>	
+				<td>=</td>
+				<td class="Dudu">Feral Druid</td>					
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30051/idol-of-the-crescent-goddess" data-wowhead="item=30051">Idol of the Crescent Goddess</a></td>
+				<td class="Dudu">Resto Druid</td>				
+			</tr>			
+		</table>
+	</div>
+	<div class="togleme"><h2>The Lurker Below</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30059/choker-of-animalistic-fury" data-wowhead="item=30027">Choker of Animalistic Fury</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Hunt">BM</td>
+				<td>></td>
+				<td class="Hunt">Surv</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30058/mallet-of-the-tides" data-wowhead="item=30058">Mallet of the Tides</a></td>
+				<td class="Warr">Prot Warrior</td>
+				<td>></td>
+				<td class="Pal">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30064/cord-of-screaming-terrors" data-wowhead="item=30064">Cord of screaming terrors</a></td>
+				<td class="Priest">Shadow Priest</td>
+				<td>=</td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+				<td>=</td>
+				<td class="Lock">Warlock</td>
+				<td>=</td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30067/velvet-boots-of-the-guardian" data-wowhead="item=30067">Velvet Boots of the Guardian</a></td>
+				<td class="Shammy">Elemental</td>				
+				<td>></td>
+				<td class="Mage">Mage</td>
+			</tr>			
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30062/grove-bands-of-remulos" data-wowhead="item=30062">Grove-Bands of Remulos</a></td>
+				<td class="Dudu">Resto Druid</td>				
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>				
+				<td>=</td>
+				<td class="Shammy">Resto Shaman</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30060/boots-of-effortless-striking" data-wowhead="item=30060">Boots of Effortless Striking</a></td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>				
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30066/tempest-strider-boots" data-wowhead="item=30066">Tempest Strider Boots</a></td>
+				<td class="Shammy">Resto Shaman</td>				
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>			
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30065/glowing-breastplate-of-truth" data-wowhead="item=30065">Glowing Breastplate of Truth</a></td>
+				<td class="Pal">Holy Paladin</td>			
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30057/bracers-of-eradication" data-wowhead="item=30057">Bracers of Eradication</a></td>
+				<td class="Shammy">Ret paladin</td>				
+				<td>=</td>
+				<td class="Pal">DPS Warrior</td>			
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30063/libram-of-absolute-truth" data-wowhead="item=30063">Libram of Absolute Truth</a></td>
+				<td class="Pal">Holy Paladin</td>				
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30061/ancestral-ring-of-conquest" data-wowhead="item=30061">Ancestral Ring of Conquest</a></td>
+				<td class="Shammy">DPS Warrior</td>				
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>				
+				<td>=</td>
+				<td class="Dudu">Feral Druid</td>			
+				<td>=</td>
+				<td class="Shammy">Enhancement</td>		
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=33054/the-seal-of-danzalar" data-wowhead="item=33054">The Seal of Danzalar</a></td>
+				<td class="Pal">Prot Paladin</td>				
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30665/earring-of-soulful-meditation" data-wowhead="item=30665">Earring of Soulful Meditation</a></td>
+				<td class="Priest">Holy Priest</td>				
+			</tr>
+		</table>
+	</div>
+	<div class="togleme"><h2>Leotherass the Blind</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30092/orca-hide-boots" data-wowhead="item=30092">Orca-Hide Boots</a></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>></td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30097/coral-barbed-shoulderpads" data-wowhead="item=30097">Coral-Barbed Shoulderpads</a></td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30091/true-aim-stalker-bands" data-wowhead="item=30620">True-Aim Stalker Bands</a></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Hunt">BM</td>
+				<td>></td>
+				<td class="Hunt">Surv</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30096/girdle-of-the-invulnerable" data-wowhead="item=30096">Girdle of the Invulnerable</a></td>
+				<td class="Pal">Prot Paladin</td>
+				<td>=</td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30627/tsunami-talisman" data-wowhead="item=30627">Tsunami Talisman</a></td>
+				<td class="Shammy">Enhancement</td>
+				<td>=</td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Pal">Ret paladin</td>
+				<td>=</td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30095/fang-of-the-leviathan" data-wowhead="item=30095">Fang of the Leviathan</a></td>
+				<td class="Lock">Warlock</td>
+				<td>></td>
+				<td class="Pal">Prot Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30239/gloves-of-the-vanquished-champion" data-wowhead="item=30239">Gloves of the Vanquished Champion</a></td>
+				<td class="Pal">Prot Paladin</td>
+				<td>></td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Shammy">Elemental</td>
+				<td>></td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>
+				<td>=</td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30240/gloves-of-the-vanquished-defender" data-wowhead="item=30240">Gloves of the Vanquished Defender</a></td>
+				<td class="Dudu">Feral Druid</td>
+				<td>=</td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Priest">Shadow Priest</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+				<td>></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30241/gloves-of-the-vanquished-hero" data-wowhead="item=30241">Gloves of the Vanquished Hero</a></td>
+				<td class="Mage">Mage</td>
+				<td>></td>
+				<td class="Hunt">BM</td>
+				<td>></td>
+				<td class="Hunt">Surv</td>
+				<td>></td>
+				<td class="Lock">Warlock</td>
+			</tr>
+		</table>
+	</div>
+	<div class="togleme"><h2>Fathom Lord Karathress</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30100/soul-strider-boots" data-wowhead="item=30100">Soul-Strider Boots</a></td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Dudu">Resto Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30101/bloodsea-brigands-vest" data-wowhead="item=30101">Bloodsea Brigand's Vest</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Rogue">Rogue</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30099/frayed-tether-of-the-drowned" data-wowhead="item=30099">Frayed Tether of the Drowned</a></td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30663/fathom-brooch-of-the-tidewalker" data-wowhead="item=30663">Fathom-Brooch of the Tidewalker</a></td>
+				<td class="Shammy">Shaman</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30626/sextant-of-unstable-currents" data-wowhead="item=30626">Sextant of Unstable Currents</a></td>
+				<td class="Priest">Shadow Priest</td>
+				<td>=</td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+				<td>=</td>
+				<td class="Lock">Warlock</td>
+				<td>=</td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30090/world-breaker" data-wowhead="item=30626">World Breaker</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Pal">Ret paladinl</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30245/leggings-of-the-vanquished-champion" data-wowhead="item=30245">Leggings of the Vanquished Champion</a></td>
+				<td class="Priest">Prot Paladin</td>
+				<td>></td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Shammy">Elemental</td>
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>
+				<td>></td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>></td>
+				<td class="Pal">Ret paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30246/leggings-of-the-vanquished-defender" data-wowhead="item=30246">Leggings of the Vanquished Defender</a></td>
+				<td class="Dudu">Feral Druid</td>
+				<td>=</td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Warr">Prot Warrior</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+				<td>=</td>
+				<td class="Priest">Shadow Priest</td>
+				<td>></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30247/leggings-of-the-vanquished-hero" data-wowhead="item=30247">Leggings of the Vanquished Hero</a></td>
+				<td class="Mage">Mage</td>
+				<td>></td>
+				<td class="Hunt">BM</td>
+				<td>></td>
+				<td class="Hunt">Surv</td>
+				<td>=</td>
+				<td class="Lock">Warlock</td>
+			</tr>
+		</table>
+	</div>
+	<div class="togleme"><h2>Morogrim Tidewalker</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30098/razor-scale-battlecloak" data-wowhead="item=30098">Razor-Scale Battlecloak</a></td>
+				<td class="Pal">Ret paladin</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>?</td>
+				<td class="Shammy">Enhancement</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30079/illidari-shoulderpads" data-wowhead="item=30079">Illidari Shoulderpads</a></td>
+				<td class="Dudu">Balance Druid</td>
+				<td>></td>
+				<td class="Priest">Shadow Priest</td>
+				<td>=</td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Lock">Warlock</td>
+				<td>=</td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30075/gnarled-chestpiece-of-the-ancients" data-wowhead="item=30075">Gnarled Chestpiece of the Ancients</a></td>
+				<td class="Dudu">Resto Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30085/mantle-of-the-tireless-tracker" data-wowhead="item=30085">Mantle of the Tireless Tracker</a></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Pal">Ret paladin</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30068/girdle-of-the-tidal-call" data-wowhead="item=30068">Girdle of the Tidal Call</a></td>
+				<td class="Shammy">Enhancement</td>
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>
+				<td>=</td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30084/pauldrons-of-the-argent-sentinel" data-wowhead="item=30084">Pauldrons of the Argent Sentinel</a></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30081/warboots-of-obliteration" data-wowhead="item=30081">Warboots of Obliteration</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>></td>
+				<td class="Pal">Ret paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30008/pendant-of-the-lost-ages" data-wowhead="item=30008">Pendant of the Lost Ages</a></td>
+				<td class="Priest">PVP</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30083/ring-of-sundered-souls" data-wowhead="item=30083">Ring of Sundered Souls</a></td>
+				<td class="Pal">Prot Paladin</td>
+				<td>=</td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30720/serpent-coil-braid" data-wowhead="item=30720">Serpent-Coil Braid</a></td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30082/talon-of-azshara" data-wowhead="item=30082">Talon of Azshara</a></td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30080/luminescent-rod-of-the-naaru" data-wowhead="item=30080">Luminescent Rod of the Naaru</a></td>
+				<td class="Priest">Holy Priest</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=33058/band-of-the-vigilant" data-wowhead="item=33058">Band of the Vigilant</a></td>
+				<td class="Priest">PVP</td>
+			</tr>
+		</table>
+	</div>
+	<div class="togleme"><h2>Lady Vashj</h2>
+		<table class="my">
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30107/vestments-of-the-sea-witch" data-wowhead="item=30107">Vestments of the Sea-Witch</a></td>
+				<td class="Lock">Warlock</td>
+				<td>></td>
+				<td class="Shammy">Elemental</td>
+				<td>></td>
+				<td class="Mage">Mage</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30111/runetotems-mantle" data-wowhead="item=30111">Runetotem's Mantle</a></td>
+				<td class="Dudu">Resto Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30106/belt-of-one-hundred-deaths" data-wowhead="item=30106">Belt of One-Hundred Deaths</a></td>
+				<td class="Pal">Ret paladin</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Dudu">Feral Druid</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Rogue">Rogue</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30104/cobra-lash-boots" data-wowhead="item=30104">Cobra-Lash Boots</a></td>
+				<td class="Hunt">Hunter</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+				<td>=</td>
+				<td class="Pal">Ret paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30102/krakken-heart-breastplate" data-wowhead="item=30102">Krakken-Heart Breastplate</a></td>
+				<td class="Pal">Ret paladin</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30109/ring-of-endless-coils" data-wowhead="item=30109">Ring of Endless Coils</a></td>
+				<td class="Lock">Warlock</td>
+				<td>=</td>
+				<td class="Shammy">Elemental</td>
+				<td>=</td>
+				<td class="Dudu">Balance Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30112/glorious-gauntlets-of-crestfall" data-wowhead="item=30112">Glorious Gauntlets of Crestfall</a></td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30621/prism-of-inner-calm" data-wowhead="item=30621">Prism of Inner Calm</a></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Shammy">Enhancement</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30110/coral-band-of-the-revived" data-wowhead="item=30110">Coral Band of the Revived</a></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>=</td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Pal">Holy Paladin</td>
+				<td>=</td>
+				<td class="Shammy">Resto Shaman</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30103/fang-of-vashj" data-wowhead="item=30103">Fang of Vashj</a></td>
+				<td class="Warr">Prot Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30108/lightfathom-scepter" data-wowhead="item=30108">Lightfathom Scepter</a></td>
+				<td class="Priest">Holy Priest</td>
+				<td>=</td>
+				<td class="Dudu">Resto Druid</td>
+				<td>=</td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>=</td>
+				<td class="Pal">Holy Paladin</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30105/serpent-spine-longbow" data-wowhead="item=30105">Serpent Spine Longbow</a></td>
+				<td class="Hunt">Hunter</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30243/helm-of-the-vanquished-defender" data-wowhead="item=30243">Helm of the Vanquished Defender</a></td>
+				<td class="Dudu">Balance Druid</td>
+				<td>=</td>
+				<td class="Priest">Holy Priest</td>
+				<td>></td>
+				<td class="Warr">Prot Warrior</td>
+				<td>></td>
+				<td class="Warr">DPS Warrior</td>
+				<td>=</td>
+				<td class="Priest">Shadow Priest</td>
+				<td>></td>
+				<td class="Dudu">Resto Druid</td>
+				<td>></td>
+				<td class="Dudu">Feral Druid</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30242/helm-of-the-vanquished-champion" data-wowhead="item=30242">Helm of the Vanquished Champion</a></td>
+				<td class="Priest">Prot Paladin</td>
+				<td>></td>
+				<td class="Rogue">Rogue</td>
+				<td>></td>
+				<td class="Shammy">Enhancement</td>
+				<td>></td>
+				<td class="Shammy">Ret paladin</td>
+				<td>=</td>
+				<td class="Pal">Holy Paladin</td>
+				<td>=</td>
+				<td class="Shammy">Resto Shaman</td>
+				<td>></td>
+				<td class="Pal">Elemental</td>
+			</tr>
+			<tr>
+				<td><a href="https://tbc.wowhead.com/item=30247/leggings-of-the-vanquished-hero" data-wowhead="item=30247">Leggings of the Vanquished Hero</a></td>
+				<td class="Mage">Mage</td>
+				<td>></td>
+				<td class="Hunt">Hunter</td>
+				<td>></td>
+				<td class="Lock">Warlock</td>
+			</tr>
+		</table>
+	</div>
+</body>
 
-</tbody>
-</table>
+</html>
